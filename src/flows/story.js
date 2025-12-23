@@ -42,10 +42,9 @@ export const scenes = [
       "Dim the lights a bit, and press Play when you are ready."
     ],
     music: { trackId: "noir", autoplay: false },
-    gate: { requireMusicStarted: true },
+    gate: { requireMusicStarted: true, requireMinSecondsPlayed: 45 },
     actions: [
       { label: "I am ready", to: "moment", style: "primary" },
-      { label: "Skip music", to: "moment", style: "ghost" }
     ]
   },
   {
