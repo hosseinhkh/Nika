@@ -1,0 +1,86 @@
+:root {
+  color-scheme: dark;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: #07060b;
+}
+
+.lux-root {
+  min-height: 100svh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.lux-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  background:
+    radial-gradient(1200px circle at 10% 10%, rgba(154, 78, 255, 0.15), transparent 55%),
+    radial-gradient(900px circle at 90% 20%, rgba(255, 104, 215, 0.10), transparent 55%),
+    radial-gradient(1000px circle at 40% 100%, rgba(71, 194, 255, 0.10), transparent 55%),
+    linear-gradient(180deg, rgba(255,255,255,0.03), transparent 45%, rgba(255,255,255,0.02));
+}
+
+.lux-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at 1px 1px, rgba(255,255,255,0.05) 1px, transparent 0);
+  background-size: 22px 22px;
+  opacity: 0.08;
+  mix-blend-mode: overlay;
+  pointer-events: none;
+}
+
+.lux-card {
+  border: 1px solid rgba(255,255,255,0.10);
+  background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
+  backdrop-filter: blur(14px);
+  border-radius: 28px;
+  box-shadow: 0 0 0.75rem rgba(255,255,255,0.05), 0 0 3rem rgba(164, 123, 255, 0.14);
+}
+
+.lux-btn-primary {
+  color: rgba(255,255,255,0.92);
+  background:
+    radial-gradient(600px circle at var(--mx) var(--my), rgba(255,255,255,0.14), transparent 55%),
+    linear-gradient(135deg, rgba(164, 123, 255, 0.45), rgba(255, 104, 215, 0.35));
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 0 0.75rem rgba(164, 123, 255, 0.18);
+}
+
+.lux-btn-ghost {
+  color: rgba(255,255,255,0.85);
+  background:
+    radial-gradient(500px circle at var(--mx) var(--my), rgba(255,255,255,0.12), transparent 55%),
+    rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+.lux-btn-danger {
+  color: rgba(255,255,255,0.92);
+  background:
+    radial-gradient(600px circle at var(--mx) var(--my), rgba(255,255,255,0.12), transparent 55%),
+    linear-gradient(135deg, rgba(255, 74, 142, 0.40), rgba(255, 140, 120, 0.30));
+  border: 1px solid rgba(255,255,255,0.12);
+  box-shadow: 0 0 0.75rem rgba(255, 74, 142, 0.12);
+}
+
+.lux-btn-primary:hover,
+.lux-btn-ghost:hover,
+.lux-btn-danger:hover {
+  transform: translateY(-1px);
+}
+
+.lux-btn-primary:active,
+.lux-btn-ghost:active,
+.lux-btn-danger:active {
+  transform: translateY(0px);
+}
