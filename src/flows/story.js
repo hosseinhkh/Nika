@@ -156,9 +156,9 @@ export const scenes = [
     ],
 
     actions: [
-      { label: "Chill date", to: "chill", style: "ghost" },
-      { label: "Surprise date", to: "surprise", style: "primary" },
-      { label: "Crazy date", to: "crazy", style: "danger" },
+      { label: "Chill Date", to: "chill", style: "ghost" },
+      { label: "Surprise Date", to: "surprise", style: "primary" },
+      { label: "Crazy Date", to: "crazy", style: "danger" },
 
     ]
   },
@@ -168,7 +168,7 @@ export const scenes = [
 
   {
     id: "chill",
-    title: "Chill date",
+    title: "Chill Date",
     body: [
       "Coooooooool",
       "please text me the word : 'Monkey' so I will know your decision, also tell me which day works best for you."
@@ -179,9 +179,9 @@ export const scenes = [
 
   {
     id: "surprise",
-    title: "Surprise date",
+    title: "Surprise Date",
     body: [
-      "Be ready for your best or worst day :))",
+      "Be ready… this will either be the best day of your life or at least a very memorable one!",
       "please text me the word : 'Tiger' so I will know your decision, also tell me which day works best for you."
     ],
   },
@@ -190,9 +190,9 @@ export const scenes = [
 
   {
     id: "crazy",
-    title: "Crazy date",
+    title: "Crazy Date",
     body: [
-      "Don't worry, i will return you in complete health to your family",
+      "Don't worry, I will return you in complete health to your family :)))",
       "please text me the word : 'Dragon' so I will know your decision, also tell me which day works best for you."
     ],
   },
